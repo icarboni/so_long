@@ -6,14 +6,14 @@
 #    By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 19:53:24 by icarboni          #+#    #+#              #
-#    Updated: 2023/05/28 18:25:20 by icarboni         ###   ########.fr        #
+#    Updated: 2023/06/26 17:34:46 by icarboni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = so_long
 LIBFT = libft.a
 PRINTF = libftprintf.a
-CC = clang
+CC = cc
 FLAG = -Wall -Wextra -Werror
 SRC = src/so_long.c src/map.c src/map_checks.c src/images.c src/keys.c src/flood_fill.c src/exit.c $(GNL)
 GNL = get_next_line/get_next_line.c get_next_line/get_next_line_utils.c
