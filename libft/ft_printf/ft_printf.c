@@ -6,7 +6,7 @@
 /*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 15:12:30 by icarboni          #+#    #+#             */
-/*   Updated: 2023/05/15 20:43:42 by icarboni         ###   ########.fr       */
+/*   Updated: 2023/07/06 19:26:14 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ int	ft_what(char txt, va_list list)
 		res += ft_putchar_('%');
 	else if (txt == 'c')
 		res += ft_putchar_(va_arg(list, int));
-	else if (txt == 's')res += ft_putstr(va_arg(list, char *));	
+	else if (txt == 's')
+		res += ft_putstr(va_arg(list, char *));
 	else if (txt == 'p')
 		res += ft_putptr(va_arg(list, void *));
 	else if (txt == 'd')
